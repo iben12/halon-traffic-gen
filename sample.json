@@ -1,0 +1,5 @@
+{
+  "sender": {"localpart": "no-reply", "domain": "aol.com.black.hole"},
+  "recipients": [{"localpart": "recipient1", "domain": "aol.com.black.hole"}],
+  "metadata": {"jobid": "xyz"}
+}

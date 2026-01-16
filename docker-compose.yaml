@@ -1,0 +1,20 @@
+services:
+  mail-sink:
+    build: ./smtp-sink
+    command:
+      - -H
+      - MailSink
+      - -i
+      - "0.0.0.0"
+      - -p
+      - "1125"
+    ports:
+      - "1125:1125"
+  http-sink:
+    build: ./http-sink
+    command:
+      - -port
+      - "8080"
+      - -verbose
+    ports:
+      - "8080:8080"
